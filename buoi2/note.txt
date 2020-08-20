@@ -1,0 +1,24 @@
+1. gioi thietu
+ASNT = number ,string,arry,time : 4 kieu du lieu pho bien
+2. Lam sao biet
+Su dung hàm "var_dump" và gettype  đẻ lấy kiểu dữ liệu
+Su dung nhóm hàm:
+is_numberic 
+is_string
+is_array
+is_data
+is_data
+I. Array:
+Dung de luu nhieu gia tri giong nhau
+3 loai mang 1 chieu, mang da chieu , mang kêt hơp ( gọi bằng string);
+1, ma g 1 chieu
+$m[] = "123";
+Mang 1 chieu co 3 cach khai bao
+Mang dong bo, 
+c1 , khai bao tung phan tung
+c2, khai bao tung pha tu + index
+c3, khai bao nguyen cum array
+2, Mang ket hop: co 2 cach khai bao 
+c1. Khai bao tung phan tu _ index
+c2, Khai bao ngue cu mẩy    
+3 mang da chieu : co 2 cach khai bao
