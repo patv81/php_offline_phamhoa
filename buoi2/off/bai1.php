@@ -7,7 +7,11 @@ function exten($url){
     return array($result[0] => $result[1]);
 }
 $a= exten($test);
+$b= array(
+    "extension" => pathinfo($test, PATHINFO_EXTENSION),
+    "name" => pathinfo($test,PATHINFO_FILENAME)
+);
 echo '<pre>' ;
-print_r($a); 
+print_r($b); 
 echo'<pre>';
 ?>
