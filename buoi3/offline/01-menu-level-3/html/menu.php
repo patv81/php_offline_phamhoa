@@ -35,12 +35,12 @@ function createMenu($arr,$listkeys){
         if (isset($v1["child"])){
             $result.='<ul>';
             foreach($v1["child"] as $k2 => $v2){
-                $result .= ($listkeys[1] == $k2) ? '<li class="active">' : '<li>';
+                $result .= (isset($listkeys[1]) && $listkeys[1] == $k2) ? '<li class="active">' : '<li>';
                 $result .= sprintf('<a href="%s">%s</a>',$v2['link'],$v2['name']);
                 if (isset($v2["child"])){
                     $result .= '<ul>';
                     foreach($v2["child"] as $k3 => $v3){
-                        $result .= ($listkeys[2] == $k3) ? '<li class="active">' : '<li>';
+                        $result .= (isset($listkeys[2]) && $listkeys[2] == $k3) ? '<li class="active">' : '<li>';
                         $result .= sprintf('<a href="%s">%s</a>', $v3['link'], $v3['name']);
                         $result .= '</li>';
                     }
